@@ -14,7 +14,7 @@ case 1:ps((P[pc+1]<<24)>>24);break;
 case 2:ps(P[pc+1]|P[pc+2]<<8|P[pc+3]<<16|P[pc+4]<<24);break;
 case 3:pop();break;
 case 4:{let a=pop();ps(a);ps(a);break;}
-case 5:{let b=pop(),a=pop();ps(a);ps(b);break;}
+case 5:{let b=pop(),a=pop();ps(b);ps(a);break;}
 case 6:{let b=pop(),a=pop();ps(a);ps(b);ps(a);break;}
 case 7:{let d=pop(),b=pop(),a=pop();ps(b);ps(d);ps(a);break;}
 case 0x10:{let b=pop(),a=pop();ps(a+b|0);break;}
